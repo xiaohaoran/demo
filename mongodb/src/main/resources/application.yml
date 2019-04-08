@@ -1,0 +1,13 @@
+server:
+  port: 8088
+spring:
+  data:
+    mongodb:
+    uri: localhost://27017/stock
+  #如果配置多个数据库用逗号分隔
+  #spring.data.mongodb.uri=mongodb://192.168.1.1:20000,192.168.1.2:20000,192.168.252.12:20000/test
+
+#日志
+logging:
+  level:
+    org.springframework.data.mongodb.core: DEBUG
